@@ -9,9 +9,11 @@ body {
     line-height: 1.4;
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1, h2 {
+h1, h2, h3, .logo {
     font-family: "Changa One", cursive;
     font-weight: 400;
 }
@@ -35,10 +37,25 @@ a {
     text-decoration: none;
 }
 
+/*Header*/
 header {
-    text-align: center;
-    background-color: #000000;
+    background-color: #011627;
     padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+header .logo {
+    text-align: center;
+}
+
+header .nom {
+    color: #2ec4b6;
+    font-size: 1.75rem;
+}
+
+header .metier {
+    margin-top: -5px;
 }
 
 main {
@@ -50,3 +67,23 @@ main {
 footer {
     text-align: center;
 }
+
+/*Menu navigation*/
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+header nav ul li.hide {
+    display: none;
+}
+

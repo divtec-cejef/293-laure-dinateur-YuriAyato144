@@ -95,9 +95,13 @@ header .metier {
 }
 
 main {
-    padding: 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    padding: 0 5%;
+
+}
+
+main ul li a {
+    padding-left: 30px;
+
 }
 
 footer {
@@ -135,5 +139,27 @@ header nav ul li.actif a {
 footer {
     text-align: center;
     margin : 50px 0;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer nav ul li img {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%); /*filtre pour les image du footer*/
+    transition: all 1s;
+}
+footer nav ul li img:hover {
+    filter: grayscale(0); /*pour les transition du haut*/
+    width: 60px;
+    height: 60px;
 
 }

@@ -15,6 +15,7 @@
     font-weight: 400;
     src: url('../fonts/open-sans-v40-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* open-sans-italic - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -23,6 +24,7 @@
     font-weight: 400;
     src: url('../fonts/open-sans-v40-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* open-sans-800 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -107,10 +109,12 @@ header nav {
     text-align: center;
 }
 
-header nav ul {
+header nav ul li a {
     list-style-type: none;
     padding: 0;
     font-family: "Changa One", cursive;
+    font-weight: 400;
+    color: #fdfffc;
 }
 
 header nav ul li {
@@ -122,3 +126,14 @@ header nav ul li.hide {
     display: none;
 }
 
+
+header nav ul li a:hover,
+header nav ul li.actif a {
+    color: #2ec4b6;
+}
+
+footer {
+    text-align: center;
+    margin : 50px 0;
+
+}

@@ -49,6 +49,11 @@ body {
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 h1, h2, h3, .logo {
     font-family: "Changa One", cursive;
     font-weight: 400;
@@ -141,7 +146,7 @@ header nav ul li.actif a {
 
 footer {
     text-align: center;
-    margin : 50px 0;
+    margin: 50px 0;
 }
 
 footer nav ul {
@@ -160,6 +165,7 @@ footer nav ul li img {
     filter: grayscale(100%); /*filtre pour les image du footer*/
     transition: all 1s;
 }
+
 footer nav ul li img:hover {
     filter: grayscale(0); /*pour les transition du haut*/
     width: 60px;
@@ -184,7 +190,7 @@ footer nav ul li img:hover {
     background-position: 0 2px;
 }
 
-.page-contact ul.contact a[href="mailto:laure@dinateur.com"]  {
+.page-contact ul.contact a[href="mailto:laure@dinateur.com"] {
     background-image: url("../img/mail.png");
 }
 
@@ -192,6 +198,31 @@ footer nav ul li img:hover {
     background-image: url("../img/twitter.png");
 }
 
-.page-contact ul.contact a[href*="facebook"]  {
+.page-contact ul.contact a[href*="facebook"] {
     background-image: url("../img/facebook.png");
 }
+
+/*page acceil*/
+.page-acceil .realisations {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /*activation du flexbox*/
+    flex-wrap: wrap; /*passe à la ligne si besoin*/
+}
+
+.page-acceil .realisations figure {
+    margin: 0;
+}
+
+/*élément conteneur*/
+.page-acceil .realisations li {
+    flex-basis: calc(50% - 20px); /*marge droite + marge gauche - 50%*/
+    flex-grow: 2; /*prend la taille de deux éléments*/
+    padding: 10px;
+}
+
+.page-acceil .realisations figure {
+    margin: 0;
+}
+

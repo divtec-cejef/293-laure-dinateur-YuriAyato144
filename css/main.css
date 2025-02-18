@@ -217,7 +217,7 @@ footer nav ul li img:hover {
 
 /*élément conteneur*/
 .page-acceil .realisations li {
-    flex-basis: calc(50% - 20px); /*marge droite + marge gauche - 50%*/
+    flex-basis: calc(50% - 20px); /* marge droite + marge gauche - 50% */
     flex-grow: 2; /*prend la taille de deux éléments*/
     padding: 10px;
 }
@@ -226,3 +226,26 @@ footer nav ul li img:hover {
     margin: 0;
 }
 
+
+
+/*écran plus grand ou égale à 480px*/
+
+@media screen and (min-width: 480px) {
+    main {
+        background: #e71d36;
+    }
+}
+
+/*écran plus grand ou égale à 660px*/
+@media screen and (min-width: 660px) {
+    main {
+        background: #2ec4b6;
+    }
+}
+
+/*écran plus grand ou égale à 910px*/
+@media screen and (min-width: 910px) {
+    main {
+        background: #54cde0;
+    }
+}

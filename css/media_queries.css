@@ -1,0 +1,30 @@
+/*écran plus grand ou égale à 480px*/
+
+@media screen and (min-width: 480px) {
+    main {
+        background: #e71d36;
+    }
+}
+
+/*écran plus grand ou égale à 660px*/
+@media screen and (min-width: 660px) {
+    main {
+        background: #2ec4b6;
+    }
+}
+
+/*écran plus grand ou égale à 910px*/
+@media screen and (min-width: 910px) {
+    main {
+        background: #54cde0;
+    }
+}
+
+
+
+/*pour les impression*/
+@media print {
+    header {
+        display: none;
+    }
+}

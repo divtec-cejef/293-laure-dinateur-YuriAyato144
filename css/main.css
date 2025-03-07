@@ -249,3 +249,18 @@ footer nav ul li img:hover {
         background: #54cde0;
     }
 }
+
+/*passer sur trois colonnes*/
+
+@media culunm {
+    .page-acceuil .realisations li {
+        flex-basics: calc(100% / 3);
+        flex-grow: 3;
+    }
+}
+
+@media li {
+    div {
+        display: flex;
+    }
+}
